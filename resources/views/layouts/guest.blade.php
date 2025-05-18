@@ -18,7 +18,7 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <x-application-logo class="w-64 h-64" />
                 </a>
             </div>
 
@@ -26,5 +26,10 @@
                 {{ $slot }}
             </div>
         </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>    
+    @vite(['resources/js/password.js'])
+    @vite(['resources/js/login.js'])
+
     </body>
 </html>

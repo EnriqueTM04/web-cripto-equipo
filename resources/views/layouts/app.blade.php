@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
+        @stack('styles')
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -32,5 +34,10 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>    
+        @vite(['resources/js/password.js'])
+        @vite(['resources/js/login.js'])
+
     </body>
 </html>

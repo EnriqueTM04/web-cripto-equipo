@@ -51,14 +51,12 @@
         <!-- Pantalla de bienvenida -->
         <main class="flex-1 w-full flex flex-col justify-center items-center">
             <section class="w-full max-w-2xl bg-white dark:bg-[#1b1b18]/80 rounded-2xl shadow-lg px-8 py-10 flex flex-col items-center text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/3004/3004415.png"
-                     alt="Criptografía Icon"
-                     class="w-24 h-24 mb-6 drop-shadow" loading="lazy">
+                <x-application-logo class="w-64 h-64" />
                 <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-indigo-700 dark:text-indigo-400">Bienvenido a <span class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-sky-500 dark:from-indigo-400 dark:to-sky-300">CriptTeam</span></h1>
                 <p class="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-6">
                     Explora el fascinante mundo de los secretos, códigos y enigmas. Aquí podrás aprender y asombrarte con el arte de ocultar y revelar información, desde la antigüedad hasta la era digital.
                 </p>
-                <a href="#"
+                <a href="{{ route('dashboard') }}"
                    class="mt-3 px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-semibold text-lg shadow-md transition">
                     Ver datos curiosos
                 </a>
