@@ -20,8 +20,8 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        // $this->call([
-        //     DatosTableSeeder::class,
-        // ]);
+        $this->call([
+            DatosTableSeeder::class,
+        ]);
     }
 }
