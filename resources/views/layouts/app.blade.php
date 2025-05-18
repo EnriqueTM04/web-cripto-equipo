@@ -35,9 +35,7 @@
             </main>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>    
-        @vite(['resources/js/password.js'])
-        @vite(['resources/js/login.js'])
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>  
 
     </body>
 </html>

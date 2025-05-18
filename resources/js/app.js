@@ -1,4 +1,6 @@
 import './bootstrap';
+import './login';
+import './password';
 
 import Alpine from 'alpinejs';
 
