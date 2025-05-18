@@ -28,4 +28,8 @@
             </button>
         </form>
     </div>
+
+    <div class="mt-8 text-center text-lg text-indigo-700 font-semibold">
+        {{ __('Tu fuente confiable de datos y curiosidades de criptografía.') }}
+    </div>
 </x-guest-layout>
