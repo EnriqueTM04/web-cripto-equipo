@@ -19,11 +19,6 @@ Ideal para estudiantes, entusiastas de la tecnología y cualquier persona intere
 
 ## 📸 Capturas de pantalla
 
-> _Agrega aquí tus imágenes reales_  
->  
-> ![Captura de pantalla principal](public/img/screenshot-main.png)  
-> ![PDF generado](public/img/screenshot-pdf.png)  
-
 ---
 
 ## 🚦 Instalación rápida
@@ -74,7 +69,6 @@ Ideal para estudiantes, entusiastas de la tecnología y cualquier persona intere
 
 ## 📚 Créditos y agradecimientos
 
-- **CriptTeam** fue creado por [Tu Nombre](https://github.com/tuusuario)
 - Íconos por [Flaticon](https://flaticon.com)
 - Inspirado por la pasión de aprender y compartir sobre criptografía.
 
