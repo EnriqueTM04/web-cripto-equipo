@@ -40,8 +40,6 @@ class RegisteredUserController extends Controller
                 'regex:/^(?!.*(.)\1)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).+$/'
             ],
             'password_confirmation' => ['required', 'same:password'],
-        ], [
-            'password.regex' => 'La contraseña debe tener al menos una mayúscula, una minúscula, un número, un símbolo y no puede tener caracteres repetidos consecutivos.',
         ]);
 
         $user = User::create([
