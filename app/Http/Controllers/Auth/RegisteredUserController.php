@@ -32,9 +32,19 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'min:8'],
+            'password' => [
+                'required',
+                'min:8',
+                // Cambia el regex dependiendo de la política:
+                // Para prohibir tres iguales seguidos:
+                'regex:/^(?!.*(.)\1{2,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/'
+            ],
             'password_confirmation' => ['required', 'same:password'],
+        ], [
+            'password.regex' => 'La contraseña debe tener al menos una mayúscula, una minúscula, un número, un símbolo y no puede tener caracteres consecutivos repetidos.'
         ]);
+
+
 
         $user = User::create([
             'name' => $request->name,
