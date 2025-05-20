@@ -37,7 +37,7 @@ class RegisteredUserController extends Controller
             'password' => [
                 'required',
                 'min:8',
-                'regex:/^(?!.*(.)\1)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).+$/'
+                'regex:/^(?!.*(.)\1)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d\s]).+$/'
             ],
             'password_confirmation' => ['required', 'same:password'],
         ]);
