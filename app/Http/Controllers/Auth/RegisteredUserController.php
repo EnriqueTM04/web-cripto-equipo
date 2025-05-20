@@ -36,9 +36,8 @@ class RegisteredUserController extends Controller
             ],
             'password' => [
                 'required',
-                'min:8', // controla la longitud mínima
-                // No permite caracteres consecutivos repetidos, y requiere mayus, minus, número y símbolo:
-                'regex:/^(?!.*(.)\1)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/'
+                'min:8',
+                'regex:/^(?!.*(.)\1)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^\w]).+$/'
             ],
             'password_confirmation' => ['required', 'same:password'],
         ], [
